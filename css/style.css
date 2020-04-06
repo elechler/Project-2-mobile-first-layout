@@ -1,4 +1,95 @@
 
 
-/* left off trying to figure out how to use the google font step of the project */
+/* left off trying to figure out how to use the google font step of the project, get the normalize rules, box sizing
 
+@font-face {
+    font-family: "Shadows Into Light";
+    src: url("https://fonts.google.com/specimen/Shadows+Into+Light?query=shad");
+    }
+
+body {
+font-family: Shadows Into Light;
+
+}
+*/
+* {
+    box-sizing: border-box; /*not sure if i am using this right?*/
+}
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0 15px 0 15px;
+}
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+h3 {
+    text-transform: uppercase;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.img {
+    display: block;
+    margin: auto;
+    width: 95%;
+}
+
+.main-header {
+    background: whitesmoke;
+    padding: 5px 10px 5px 10px;
+    margin: 0 20px 0 20px;
+    width: 95%;
+}
+.main-header li {
+    display: block;
+    float: left;
+    width: 100%;
+    background: white;
+    padding: 10px 10px;
+    margin: 3px;
+    text-align: center;
+    font-weight: bold;  
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    margin: 0 10px;
+    background: darkgray;
+}
+.main-content {
+    
+    background: white;
+    width: 95%;
+    margin: 0 20px 0 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+footer {    
+    background: whitesmoke;
+    width: 95%;
+    margin: 0 20px 0 20px;
+    padding: 10px 10px 10px 10px;
+}
+.footer-nav {
+    border-top: 2px solid grey;
+}
+.footer-nav li {
+    display: block;
+    float: left;
+    padding: 10px;
+    margin: 0 30px 0 30px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
