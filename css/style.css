@@ -12,24 +12,37 @@ font-family: Shadows Into Light;
 
 }
 */
+
 * {
     box-sizing: border-box; /*not sure if i am using this right?*/
 }
-p {
+/*typography*/
+h1 {
     text-align: center;
-    font-size: 1.1rem;
-    padding: 0 15px 0 15px;
+    padding: 0;
+    margin: 10px o;
 }
-h1,
-h2,
-h3 {
+h2 {
     text-align: center;
 }
 h3 {
     text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    
 }
-li {
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0 15px 10px 15px;
+}
+ul {
+    display: block;
+    margin: auto;
+    padding: 0;
     list-style: none;
+    border: 2px solid pink;
 }
 a {
     text-decoration: none;
@@ -41,11 +54,41 @@ a {
     margin: auto;
     width: 95%;
 }
-
+/*containers*/
+body {
+    font-family: Arial;
+    background: darkgray;
+    width: 95%;
+    margin: auto;
+    padding: 0;
+    border: 2px solid orange;
+}
+.header-container {
+    background: whitesmoke;
+    width: 95%;
+    margin: auto;
+    padding: 5px;
+    border: 2px solid red;
+}
+.main-container {
+    background: white;
+    width: 95%;
+    margin: auto;
+    padding: 5px;
+    border: 2px solid blue;
+}
+.footer-container {    
+    background: whitesmoke;
+    width: 95%;
+    margin: auto;
+    padding: 5px;
+    border: 2px solid purple;
+}
+/*end of containers*/
 .main-header {
     background: whitesmoke;
-    padding: 5px 10px 5px 10px;
-    margin: 0 20px 0 20px;
+    padding: 5px;
+    margin: auto;
     width: 95%;
 }
 .main-header li {
@@ -53,37 +96,18 @@ a {
     float: left;
     width: 100%;
     background: white;
-    padding: 10px 10px;
+    padding: 10px;
     margin: 3px;
-    text-align: center;
     font-weight: bold;  
-    border: 2px solid red;
+
 }
-.main-nav {
+/*.main-nav {
     display: block;
     margin: auto;
     border: 2px solid blue;
+    height: 100%;
 }
-body {
-    font-family: Arial;
-    padding: 10px;
-    margin: 0 10px;
-    background: darkgray;
-}
-.main-content {
-    
-    background: white;
-    width: 95%;
-    margin: 0 20px 0 20px;
-    padding: 10px 10px 10px 10px;
-}
-
-footer {    
-    background: whitesmoke;
-    width: 95%;
-    margin: 0 20px 0 20px;
-    padding: 10px 10px 10px 10px;
-}
+*/
 .footer-nav {
     border-top: 2px solid grey;
 }
