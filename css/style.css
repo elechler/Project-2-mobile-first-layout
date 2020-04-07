@@ -1,21 +1,11 @@
 
 
-/* left off trying to figure out how to use the google font step of the project, get the normalize rules, box sizing
-
-@font-face {
-    font-family: "Shadows Into Light";
-    src: url("https://fonts.google.com/specimen/Shadows+Into+Light?query=shad");
-    }
-
-body {
-font-family: Shadows Into Light;
-
-}
-*/
+/*    get the normalize rules, box sizing   */
 
 * {
     box-sizing: border-box; /*not sure if i am using this right?*/
 }
+
 /*typography*/
 h1 {
     text-align: center;
@@ -30,7 +20,6 @@ h3 {
     text-align: center;
     padding: 0;
     margin: 0;
-    
 }
 p {
     text-align: center;
@@ -56,7 +45,7 @@ a {
 }
 /*containers*/
 body {
-    font-family: Arial;
+    font-family: 'Shadows Into Light', serif;
     background: darkgray;
     width: 95%;
     margin: auto;
