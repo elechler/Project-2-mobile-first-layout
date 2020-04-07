@@ -1,6 +1,27 @@
 
 
-/*    get the normalize rules, box sizing   */
+/*    get the normalize rules, box sizing 
+
+.box {
+  width: 90%;
+  max-width:600px;
+  height: 300px;
+  padding: 20px;
+  border: 2px solid red;
+  margin: auto;
+  overflow: auto;
+  box-sizing: border-box;
+*/
+
+/*ul {
+    display: block;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    border: 2px solid pink;
+}
+*/
+
 
 * {
     box-sizing: border-box; /*not sure if i am using this right?*/
@@ -10,13 +31,12 @@
 h1 {
     text-align: center;
     padding: 0;
-    margin: 10px o;
+    margin: 10px 0;
 }
 h2 {
     text-align: center;
 }
 h3 {
-    text-transform: uppercase;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -25,13 +45,6 @@ p {
     text-align: center;
     font-size: 1.1rem;
     padding: 0 15px 10px 15px;
-}
-ul {
-    display: block;
-    margin: auto;
-    padding: 0;
-    list-style: none;
-    border: 2px solid pink;
 }
 a {
     text-decoration: none;
@@ -52,51 +65,56 @@ body {
     padding: 0;
     border: 2px solid orange;
 }
+.box {
+    width: 95%;
+    margin: auto;
+    padding: 5px;
+}
 .header-container {
     background: whitesmoke;
-    width: 95%;
-    margin: auto;
-    padding: 5px;
     border: 2px solid red;
 }
+/*end of containers*/
+
+.main-header {
+    padding: 5px;
+    margin: auto;
+    width: 95%;
+    background: yellow;
+}
+.menu li {
+    list-style: none;
+    margin: 0;
+    padding: 3px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid green;
+    background: white;
+   
+}
+
+
+
+
+
+
 .main-container {
     background: white;
-    width: 95%;
-    margin: auto;
-    padding: 5px;
     border: 2px solid blue;
 }
+
+
+
+
+
 .footer-container {    
     background: whitesmoke;
-    width: 95%;
-    margin: auto;
-    padding: 5px;
     border: 2px solid purple;
 }
-/*end of containers*/
-.main-header {
-    background: whitesmoke;
-    padding: 5px;
-    margin: auto;
-    width: 95%;
-}
-.main-header li {
-    display: block;
-    float: left;
-    width: 100%;
-    background: white;
-    padding: 10px;
-    margin: 3px;
-    font-weight: bold;  
 
-}
-/*.main-nav {
-    display: block;
-    margin: auto;
-    border: 2px solid blue;
-    height: 100%;
-}
-*/
+
+
 .footer-nav {
     border-top: 2px solid grey;
 }
