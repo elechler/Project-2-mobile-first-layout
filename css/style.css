@@ -113,12 +113,25 @@ ol {
 }
 .footer-nav {
     border-top: 2px solid grey;
+    margin-bottom: 30px;
 }
 .footer-nav li {
     display: inline-block;
     padding: 0 10px;
     margin: 10px 30px;
-    border-right: 1px solid grey;
+}
+footer {
+    position: relative
+}
+.name {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+}
+.top {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
 }
 /*=============================== end navigation=============*/
 
@@ -127,3 +140,33 @@ ol {
     clear: both;
     display: table;
   }
+
+  /* ================================= 
+  Media Queries
+==================================== 
+
+@media (min-width: 769px) {
+
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
+	.container {
+		width: 80%;
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+
+*/
+@media (min-width: 769px) {
+.main-header,
+.main-nav li {
+  display: inline;
+}
+}
+/*
+.name {
+  width: 240px;
+ 
+}
+*/
