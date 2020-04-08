@@ -95,14 +95,19 @@ ol {
 	margin-top: 6px;
 	margin-bottom: 6px;
 }
+.student-name {
+    display: block;
+}
+
 .main-nav a {
 	font-size: 1.1em;
 	text-transform: uppercase;
     font-weight: bold;
+    padding: 10px 15px;
+    display: block;
 }
-.main-nav a {
-  padding: 10px 15px;
-  display: block;
+.student-name {
+    display: block;
 }
 .contact-info li {
     line-height: 1.7em;
