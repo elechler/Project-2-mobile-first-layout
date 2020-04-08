@@ -3,70 +3,80 @@
     <head>
         <meta name=viewport content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <title>Erin Lechler</title>
     </head>
 
-    <header class="box header-container">
-        <div class="main-header">
+<div class="box">
+    <header class="main-header">
+        <div class="container">
             <h1>Erin Lechler</h1>
-                    <nav class="menu">
-                        <ul>
-                        <li class="menu"><a href="#">Home</a></li>
-                        <li class="menu"><a href="#">Portfolio</a></li>
-                        <li class="menu"><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>    
-                    <img src="images/responsive-layout-profile.png" alt="Profile Image" class="img">
-                    <p>Hi, I'm a front-end developer who loves responsive design and css.  I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use. </p>
+                <ul class="main-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>   
+            <img src="images/responsive-layout-profile.png" alt="Profile Image" class="profile-img">
+            <p>Hi, I'm a front-end developer who loves responsive design and css.  I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use. </p>
         </div>
     </header>
-        
+
         <body>
-        <div class="main-container box">
-            <h3>Portfolio</h3>
-            <img src="images/portfolio-1.png" alt="Portfolio 1" class="img">
-            <h2>Marketing Page</h2>
-            <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+            <div class="container main-body">
+                <section id="portfolio">
+                    <h3>Portfolio</h3>
+                    <img src="images/portfolio-1.png" alt="Portfolio 1" class="img">
+                </section>
 
-            <img src="images/portfolio-2.png" alt="Portfolio 2" class="img">
-            <h2>Search Page</h2>
-            <p>This project searches through a specific database to find information the user is trying to look up.</p>
+                <h2>Marketing Page</h2>
+                <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
 
-            <img src="images/portfolio-3.png" alt="Portfolio 3" class="img">
-            <h2>Travel App</h2>
-            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+                <img src="images/portfolio-2.png" alt="Portfolio 2" class="img">
+                <h2>Search Page</h2>
+                <p>This project searches through a specific database to find information the user is trying to look up.</p>
 
-            <img src="images/portfolio-4.png" alt="Portfolio 4" class="img">
-            <h2>Map of Favorite Spots</h2>
-            <p>This project used mapping apps to plot point for my favorite spots in the city for a do-it-yourself walking tour.</p>
+                <img src="images/portfolio-3.png" alt="Portfolio 3" class="img">
+                <h2>Travel App</h2>
+                <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
 
-            <img src="images/portfolio-5.png" alt="Portfolio 5" class="img">
-            <h2>Photo Gallery</h2>
-            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through the photos.</p>
+                <img src="images/portfolio-4.png" alt="Portfolio 4" class="img">
+                <h2>Map of Favorite Spots</h2>
+                <p>This project used mapping apps to plot point for my favorite spots in the city for a do-it-yourself walking tour.</p>
 
-            <img src="images/portfolio-6.png" alt="Porfolio 6" class="img">
-            <h2>Calculator</h2>
-            <p>Someone can enter in the numbers they want, and press the big blue button and get the result</p>
+                <img src="images/portfolio-5.png" alt="Portfolio 5" class="img">
+                <h2>Photo Gallery</h2>
+                <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through the photos.</p>
+
+                <img src="images/portfolio-6.png" alt="Porfolio 6" class="img">
+                <h2>Calculator</h2>
+                <p>Someone can enter in the numbers they want, and press the big blue button and get the result</p>
+            </div>
+       
+    <div class="container main-footer"> 
+            <section id="contact">
+                <h3>Contact</h3>
+                <p>If you are interetsting in chating or want more information about what I've been working on, I'd love to hear from you!</p>
+                    <ul class="contact-info">
+                    <li><a href="tel:1-832-535-0934">Phone: 832.535.0934</a></li>
+                    <li><a href="mailto:erinlechler@gmail.com?subject=Project 2">Email: erinlechler@gmail.com</a></li>
+                    </ul>
+            </section>
         </div>
+
         </body>
         
-            <footer>
-            <div class="footer-container box clearfix">
-            <h3>Contact</h3>
-            <p>If you are interetsting in chating or want more information about what I've been working on, I'd love to hear from you!</p>
-            <p>Phone: 832.535.0934</p>
-            <p>Email: erinlechler@gmail.com</p>
+            <footer class="container main-footer">
                 <div class="footer-nav">
-                <ul>
-                <li><a href="#">Erin Lechler</a></li>
-                <li><a href="#top">Back to top</a></li>
-                </ul></div>
-            </div>
+                    <ul>
+                    <li><a href="#">Erin Lechler</a></li>
+                    <li><a href="#top">Back to top</a></li>
+                    </ul></div>
+                </div>
             </footer>
+</div>
 </html>
 
-
-
+<a href="tel:1-562-867-5309">1-562-867-5309</a>
 
 

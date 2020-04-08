@@ -1,129 +1,127 @@
-
-
-/*    get the normalize rules, box sizing 
-
-.box {
-  width: 90%;
-  max-width:600px;
-  height: 300px;
-  padding: 20px;
-  border: 2px solid red;
-  margin: auto;
-  overflow: auto;
-  box-sizing: border-box;
-*/
-
-/*ul {
-    display: block;
-    margin: auto;
-    padding: 0;
-    list-style: none;
-    border: 2px solid pink;
-}
-*/
-
-
 * {
-    box-sizing: border-box; /*not sure if i am using this right?*/
+    box-sizing: border-box; 
 }
+/*=======================================containers=================*/
+.box {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    background: darkgrey;
+}
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.main-header {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: whitesmoke;
+    margin-bottom: 0;
+}
+.main-body {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+    background: white;
+}
+.main-footer {    
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: whitesmoke;
+}
+/*============================================end of containers*/
 
-/*typography*/
+/*======= styles =========*/
+body {
+    font-family: 'Shadows Into Light', serif;
+    background: darkgray;
+}
 h1 {
     text-align: center;
     padding: 0;
-    margin: 10px 0;
+    margin-top: 3px;
 }
 h2 {
     text-align: center;
+    margin-top: 0;
 }
 h3 {
     text-align: center;
-    padding: 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 30px 0;
     margin: 0;
+    color: black;
+    font-weight: bold;
 }
 p {
     text-align: center;
     font-size: 1.1rem;
-    padding: 0 15px 10px 15px;
+    padding: 0 1.5em 1em 1.5em;
+    margin-bottom: 1.5em;
 }
 a {
+    color: purple;
     text-decoration: none;
-    font-weight: bold;
-    color: black;
 }
+a:hover {
+    color: green;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+/*==================== images========================= */
 .img {
     display: block;
     margin: auto;
+    margin-bottom: 30px;
     width: 95%;
 }
-/*containers*/
-body {
-    font-family: 'Shadows Into Light', serif;
-    background: darkgray;
-    width: 95%;
-    margin: auto;
-    padding: 0;
-    border: 2px solid orange;
-}
-.box {
-    width: 95%;
-    margin: auto;
-    padding: 5px;
-}
-.header-container {
-    background: whitesmoke;
-    border: 2px solid red;
-}
-/*end of containers*/
-
-.main-header {
-    padding: 5px;
-    margin: auto;
-    width: 95%;
-    background: yellow;
-}
-.menu li {
-    list-style: none;
-    margin: 0;
-    padding: 3px;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    text-align: center;
-    border: 2px solid green;
-    background: white;
-   
+.profile-img {
+    width: 75%;
 }
 
-
-
-
-
-
-.main-container {
-    background: white;
-    border: 2px solid blue;
+/*=============================== navigation=============*/
+.main-nav li {
+	text-align: center;
+	background: white;
+	margin-top: 6px;
+	margin-bottom: 6px;
 }
-
-
-
-
-
-.footer-container {    
-    background: whitesmoke;
-    border: 2px solid purple;
+.main-nav a {
+	font-size: 1.1em;
+	text-transform: uppercase;
+    font-weight: bold;
 }
-
-
-
+.main-nav a {
+  padding: 10px 15px;
+  display: block;
+}
+.contact-info li {
+    line-height: 1.7em;
+}
+.contact-info a {
+    font-size: 1.1em;
+	font-weight: bold;
+}
 .footer-nav {
     border-top: 2px solid grey;
 }
 .footer-nav li {
-    display: block;
-    float: left;
-    padding: 10px;
-    margin: 0 30px 0 30px;
+    display: inline-block;
+    padding: 0 10px;
+    margin: 10px 30px;
+    border-right: 1px solid grey;
 }
+/*=============================== end navigation=============*/
+
 .clearfix::after {
     content: "";
     clear: both;
