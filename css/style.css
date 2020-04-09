@@ -55,7 +55,7 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.5rem;
-    padding: 30px 0;
+    padding: 15px 0;
     margin: 0;
     color: black;
     font-weight: bold;
@@ -67,7 +67,7 @@ p {
     margin-bottom: 1.5em;
 }
 a {
-    color: purple;
+    color: black;
     text-decoration: none;
 }
 a:hover {
@@ -87,26 +87,29 @@ ol {
 .profile-img {
     width: 75%;
 }
-
 /*=============================== navigation=============*/
+.main-nav {
+    padding-left: 0;
+}
 .main-nav li {
-    display: block;
-	text-align: center;
+    text-align: center;
     background: white;
-    margin-top: 6px;
-	margin-bottom: 6px;
 }
-.student-name {
-    display: block;
-    margin: auto;
-}
-
 .main-nav a {
 	font-size: 1.1em;
 	text-transform: uppercase;
     font-weight: bold;
-    padding: 10px 15px;
     display: block;
+    padding: 10px 15px;
+    margin: 6px;
+}
+.student-name {
+    text-align: center;
+    background: white;
+}
+.student-name a {
+    display: block;
+    padding: 10px 15px;
 }
 /*=============================footer details=================*/
 .contact-info li {
@@ -123,62 +126,40 @@ ol {
 .footer-nav li {
     display: inline-block;
     padding: 0 10px;
-    margin: 10px 30px;
+    margin: 10px 15px;
 }
 #footer-contact,
 #home,
 #port {
     display: none;
 }
-footer {
-    position: relative
-}
-#name {
-    position: absolute;
-    bottom: 25%;
-    left: 10%;
-}
-#top {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-}
-/*===========================================*/
-
+/*==========================fix floats=================*/
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-  }
-
-  /* ================================= Media Queries================
-
-@media (min-width: 769px) {
-
-	
-	.container {
-		width: 80%;
-		max-width: 1150px;
-		margin: 0 auto;
-	}
-.name {
-  width: 240px;
- 
 }
-*/
-
-
+/* ================================= Media Queries tablet===========================================*/
 @media (min-width: 769px) {
-
 .box {
     width: 90%;
     margin: 0 auto;
     padding: 10px;
-
 }    
-.main-header,
+/*======================header tablet=============*/
+.student-name,
 .main-nav li {
     display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    background: none;
+}
+.student-name a,
+.main-nav a {
+    padding: 5px;
+}
+.main-nav li {
+    font-size: 1.5em;
 }
 .profile-img {
     float: right;
@@ -186,67 +167,60 @@ footer {
     margin: 10px;
 }
 .intro {
-    font-size: 1.4em;
-    color: red;
+    font-size: 1.3em;
     padding-top: 15px;
+    text-align: left;
 }
-/*========================== columns=====================*/
+/*========================== columns tablet=====================*/
 .col {
     width: 50%;
     margin: 0;
     float: left;
 }
+.primary,
+.secondary {
+  width: 50%;
+}
 .img {
-    width: 300px;
-    float: left;
-    margin: 1em 1em 1em 0;
-    }
-.caption {
+    display: block;
+    width: 95%;
+    margin: auto;
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+}
+h2 {
+    margin: 5px 0;
+    text-align: center; 
+    padding: 0;
+}   
+.caption {
+    padding: 5px;
+    margin: 0 auto;
     max-width: 275px;
 }
- h2 {
-    margin-bottom: 5px;
-    margin-top: 5px;   
-    text-align: center; 
-    color: red;
-    padding: 0;
- }   
-/*===============================footer=============*/
+/*===============================footer tablet=============*/
 h3 {
     margin: 0;
     padding: 15px 0 5px 0;
 }
 .contact {
-    margin-top: 0;
+    margin: auto;
+    width: 85%;
 }
-
 #top {
     display: none;
 }
-
-/*left off here!!!!!!!!!!!!!!!!!!!!!!!!======================
 #footer-contact,
 #home,
 #port {
-    display: inline;
-    margin: 10px;
-    padding: 5px;
-    background: yellow;
-    
-
-    position: absolute;
-    bottom: 25%;
-    right: 10%;
+    text-transform: uppercase;
 }
-*/
-/*
-.footer-nav li {
+#name,
+#footer-contact,
+#home,
+#port {
     display: inline-block;
-    padding: 0 10px;
-    margin: 10px 30px;
+    padding: 5px;
+    margin: 5px;
 }
 footer {
     position: relative
@@ -256,35 +230,66 @@ footer {
     bottom: 25%;
     left: 10%;
 }
-#top {
+#footer-contact {
     position: absolute;
-    bottom: 15px;
-    right: 15px;
+    bottom: 25%;
+    right: 10%;
+}
+#port {
+    position: absolute;
+    bottom: 25%;
+    right: 23%;
+}
+#home {
+    position: absolute;
+    bottom: 25%;
+    right: 36%;
+}
+/* ================================= Media Queries desktop================ */
+@media (min-width: 1025px) {
+.box {
+    width: 80%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.main-body {
+    border-right: 20px solid whitesmoke;
+    border-left: 20px solid whitesmoke;
+}
+.student-name,
+.main-nav,
+.main-nav li {
+    display: inline-block;
+    background: none;
+    margin-right: 5px;
+}
+.student-name {
+    width: 240px;
+    margin-right: 50px;
+}
+.col {
+    width: 33%;
+    margin: 0;
+    float: left;  
+}
+.primary,
+.secondary,
+.tertiary {
+    width: 32%;
+    margin: 5px;
+    padding: 0;   
+}
+.img {
+    display: block;
+    width: 95%;
+    margin: auto;
+}
+.caption {
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 200px;
+    font-size: 1em;
 }
 
-.footer-nav li {
-    display: inline-block;
-    padding: 0 10px;
-    margin: 10px 30px;
-}
-*/
-
-/*
-
-  desktop
-  .main-nav {
-    float: right;
-  }
-  
-  .main-nav li {
-    display: inline-block;
-    margin-left: 15px;
-  }
-  
-  .tagline {
-    font-size: 1.4em;
-  }
-  
-  */
-  
 }
