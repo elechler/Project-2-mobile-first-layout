@@ -76,6 +76,7 @@ a:hover {
 ul,
 ol {
     list-style-type: none;
+    padding-inline-start: 0;
 }
 /*==================== images========================= */
 .img {
@@ -123,15 +124,17 @@ ol {
     border-top: 2px solid grey;
     margin-bottom: 30px;
 }
+/*=============================== under the solid line of the footer */
+#footer-contact,
+#home,
+#port,
+#skill {
+    display: none;
+}
 .footer-nav li {
     display: inline-block;
     padding: 0 10px;
     margin: 10px 15px;
-}
-#footer-contact,
-#home,
-#port {
-    display: none;
 }
 /*==========================fix floats=================*/
 .clearfix::after {
@@ -139,14 +142,18 @@ ol {
     clear: both;
     display: table;
 }
-/* ================================= Media Queries tablet===========================================*/
+
+/*==============================
+
+
+ /*================================= Media Queries tablet===========================================
 @media (min-width: 769px) {
 .box {
     width: 90%;
     margin: 0 auto;
     padding: 10px;
 }    
-/*======================header tablet=============*/
+/*======================header tablet=============
 .student-name,
 .main-nav li {
     display: inline-block;
@@ -171,7 +178,7 @@ ol {
     padding-top: 15px;
     text-align: left;
 }
-/*========================== columns tablet=====================*/
+/*========================== columns tablet=====================
 .col {
     width: 50%;
     margin: 0;
@@ -198,7 +205,7 @@ h2 {
     max-width: 275px;
 }
 }
-/*===============================footer tablet=============*/
+/*===============================footer tablet=============
 h3 {
     margin: 0;
     padding: 15px 0 5px 0;
@@ -207,9 +214,11 @@ h3 {
     margin: auto;
     width: 85%;
 }
+
 #top {
     display: none;
 }
+
 #footer-contact,
 #home,
 #port {
@@ -236,17 +245,24 @@ footer {
     bottom: 25%;
     right: 10%;
 }
+#skill {
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+}
 #port {
     position: absolute;
     bottom: 25%;
-    right: 23%;
+    right: 30%;
 }
 #home {
     position: absolute;
     bottom: 25%;
-    right: 36%;
+    right: 40%;
 }
-/* ================================= Media Queries desktop================ */
+
+
+/* ================================= Media Queries desktop================ 
 @media (min-width: 1025px) {
 .box {
     width: 80%;
@@ -294,3 +310,4 @@ footer {
 }
 
 }
+*/
