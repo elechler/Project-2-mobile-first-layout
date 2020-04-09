@@ -35,9 +35,7 @@
     margin-bottom: 0;
     background: whitesmoke;
 }
-/*============================================end of containers*/
-
-/*======= styles =========*/
+/*======= ==================================styles =========*/
 body {
     font-family: 'Shadows Into Light', serif;
     background: darkgray;
@@ -71,14 +69,14 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: green;
+    color: purple;
 }
 ul,
 ol {
     list-style-type: none;
     padding-inline-start: 0;
 }
-/*==================== images========================= */
+/*==================== ======================images========================= */
 .img {
     display: block;
     margin: auto;
@@ -87,23 +85,22 @@ ol {
 }
 .profile-img {
     width: 75%;
+    border: 4px solid green;
+    border-radius: 10px;
+    margin-top: 5px;
 }
 /*=============================== navigation=============*/
-.main-nav {
-    padding-left: 0;
-}
-.main-nav li {
+nav a {
     text-align: center;
     background: white;
-}
-.main-nav a {
-	font-size: 1.1em;
-	text-transform: uppercase;
+    font-size: 1.1em;
+    text-transform: uppercase;
     font-weight: bold;
     display: block;
     padding: 10px 15px;
     margin: 6px;
-}
+    color: green;
+    }
 .student-name {
     text-align: center;
     background: white;
@@ -142,9 +139,6 @@ ol {
     clear: both;
     display: table;
 }
-
-
-
  /*================================= Media Queries TABLET===========================================*/
 @media (min-width: 769px) {
 .box {
@@ -154,17 +148,13 @@ ol {
 }    
 /*======================header TABLET=============*/
 .student-name,
-.main-nav li {
+nav a {
     display: inline-block;
     margin: 5px;
     padding: 5px;
     background: none;
 }
-.student-name a,
-.main-nav a {
-    padding: 5px;
-}
-.main-nav li {
+nav a {
     font-size: 1.5em;
 }
 .profile-img {
@@ -203,9 +193,6 @@ h2 {
     margin: 0 auto;
     max-width: 275px;
 }
-
-
-
 /*===============================footer TABLET=============*/
 h3 {
     margin: 0;
@@ -215,14 +202,11 @@ h3 {
     margin: auto;
     width: 85%;
 }
-
 #top {
     display: none;
 }
-
 }
 /*===============================footer TABLET special rule for hidden items=============*/
-
 @media only screen and (min-width: 770px) {
     #footer-contact,
     #home,
@@ -269,8 +253,7 @@ footer {
     padding: 3px;
 }
 }
-
-/* ================================= Media Queries desktop================ */
+/* ================================= Media Queries DESKTOP ================ */
 @media (min-width: 1025px) {
 .box {
     width: 80%;
@@ -283,8 +266,7 @@ footer {
     border-left: 20px solid whitesmoke;
 }
 .student-name,
-.main-nav,
-.main-nav li {
+nav {
     display: inline-block;
     background: none;
     margin-right: 5px;
@@ -316,6 +298,5 @@ footer {
     max-width: 200px;
     font-size: 1em;
 }
-
 }
 
