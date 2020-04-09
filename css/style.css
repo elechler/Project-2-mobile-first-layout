@@ -57,7 +57,7 @@ h3 {
     font-size: 1.5rem;
     padding: 15px 0;
     margin: 0;
-    color: black;
+    color: green;
     font-weight: bold;
 }
 p {
@@ -128,7 +128,7 @@ ol {
 #footer-contact,
 #home,
 #port,
-#skill {
+#skill.hidden {
     display: none;
 }
 .footer-nav li {
@@ -143,17 +143,16 @@ ol {
     display: table;
 }
 
-/*==============================
 
 
- /*================================= Media Queries tablet===========================================
+ /*================================= Media Queries TABLET===========================================*/
 @media (min-width: 769px) {
 .box {
     width: 90%;
     margin: 0 auto;
     padding: 10px;
 }    
-/*======================header tablet=============
+/*======================header TABLET=============*/
 .student-name,
 .main-nav li {
     display: inline-block;
@@ -178,7 +177,7 @@ ol {
     padding-top: 15px;
     text-align: left;
 }
-/*========================== columns tablet=====================
+/*========================== columns TABLET=====================*/
 .col {
     width: 50%;
     margin: 0;
@@ -204,8 +203,10 @@ h2 {
     margin: 0 auto;
     max-width: 275px;
 }
-}
-/*===============================footer tablet=============
+
+
+
+/*===============================footer TABLET=============*/
 h3 {
     margin: 0;
     padding: 15px 0 5px 0;
@@ -219,18 +220,18 @@ h3 {
     display: none;
 }
 
-#footer-contact,
-#home,
-#port {
-    text-transform: uppercase;
 }
-#name,
-#footer-contact,
-#home,
-#port {
-    display: inline-block;
-    padding: 5px;
-    margin: 5px;
+/*===============================footer TABLET special rule for hidden items=============*/
+
+@media only screen and (min-width: 770px) {
+    #footer-contact,
+    #home,
+    #port,
+    #skill.hidden {
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 3px;
+        margin: 0;
 }
 footer {
     position: relative
@@ -238,31 +239,38 @@ footer {
 #name {
     position: absolute;
     bottom: 25%;
-    left: 10%;
+    left:10%;
 }
 #footer-contact {
     position: absolute;
     bottom: 25%;
-    right: 10%;
+    right: 20px;
+    margin-left: 3px;
+    padding: 3px;
 }
 #skill {
     position: absolute;
     bottom: 25%;
-    left: 20%;
+    right: 91px;
+    margin-left: 3px;
+    padding: 3px;
 }
 #port {
     position: absolute;
     bottom: 25%;
-    right: 30%;
+    right: 152px;
+    margin-left: 3px;
+    padding: 3px;
 }
 #home {
     position: absolute;
     bottom: 25%;
-    right: 40%;
+    right: 229px;
+    padding: 3px;
+}
 }
 
-
-/* ================================= Media Queries desktop================ 
+/* ================================= Media Queries desktop================ */
 @media (min-width: 1025px) {
 .box {
     width: 80%;
@@ -310,4 +318,4 @@ footer {
 }
 
 }
-*/
+
