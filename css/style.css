@@ -1,7 +1,4 @@
-* {
-    box-sizing: border-box; 
-}
-/*=======================================containers=================*/
+
 .box {
     width: 100%;
     margin: 0 auto;
@@ -34,6 +31,9 @@
     margin-top: 0;
     margin-bottom: 0;
     background: whitesmoke;
+}
+*{
+    box-sizing: border-box; 
 }
 /*======= ==================================styles =========*/
 body {
@@ -74,7 +74,7 @@ a:hover {
 ul,
 ol {
     list-style-type: none;
-    padding-inline-start: 0;
+    padding-left: 0;
 }
 /*==================== ======================images========================= */
 .img {
@@ -103,7 +103,7 @@ nav a {
     }
 .student-name {
     text-align: center;
-    background: white;
+    
 }
 .student-name a {
     display: block;
