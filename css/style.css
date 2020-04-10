@@ -1,4 +1,7 @@
-
+/*============================== containers =====================*/
+*{
+    box-sizing: border-box; 
+}
 .box {
     width: 100%;
     margin: 0 auto;
@@ -32,10 +35,7 @@
     margin-bottom: 0;
     background: whitesmoke;
 }
-*{
-    box-sizing: border-box; 
-}
-/*======= ==================================styles =========*/
+/*======= ================================== styles =========*/
 body {
     font-family: 'Shadows Into Light', serif;
     background: darkgray;
@@ -76,7 +76,7 @@ ol {
     list-style-type: none;
     padding-left: 0;
 }
-/*==================== ======================images========================= */
+/*==================== ====================== images ========================= */
 .img {
     display: block;
     margin: auto;
@@ -89,7 +89,7 @@ ol {
     border-radius: 10px;
     margin-top: 5px;
 }
-/*=============================== navigation=============*/
+/*=============================== navigation =============*/
 nav a {
     text-align: center;
     background: white;
@@ -109,7 +109,7 @@ nav a {
     display: block;
     padding: 10px 15px;
 }
-/*=============================footer details=================*/
+/*============================= footer details =================*/
 .contact-info li {
     line-height: 1.7em;
 }
@@ -121,7 +121,7 @@ nav a {
     border-top: 2px solid grey;
     margin-bottom: 30px;
 }
-/*=============================== under the solid line of the footer */
+/*================== under the solid line of the footer */
 #footer-contact,
 #home,
 #port,
@@ -133,20 +133,23 @@ nav a {
     padding: 0 10px;
     margin: 10px 15px;
 }
-/*==========================fix floats=================*/
+/*========================== fix floats =================*/
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
- /*================================= Media Queries TABLET===========================================*/
+ /*================================= Media Queries TABLET ===========================================*/
 @media (min-width: 769px) {
 .box {
     width: 90%;
     margin: 0 auto;
     padding: 10px;
 }    
-/*======================header TABLET=============*/
+/*====================== header TABLET =============*/
+.main-header {
+    width: 100%;
+}
 .student-name,
 nav a {
     display: inline-block;
@@ -167,7 +170,7 @@ nav a {
     padding-top: 15px;
     text-align: left;
 }
-/*========================== columns TABLET=====================*/
+/*========================== columns TABLET =====================*/
 .col {
     width: 50%;
     margin: 0;
@@ -193,7 +196,7 @@ h2 {
     margin: 0 auto;
     max-width: 275px;
 }
-/*===============================footer TABLET=============*/
+/*=============================== footer TABLET =============*/
 h3 {
     margin: 0;
     padding: 15px 0 5px 0;
@@ -206,7 +209,7 @@ h3 {
     display: none;
 }
 }
-/*===============================footer TABLET special rule for hidden items=============*/
+/*== footer TABLET special rule for hidden items =========*/
 @media only screen and (min-width: 770px) {
     #footer-contact,
     #home,
@@ -260,6 +263,9 @@ footer {
     max-width: 1150px;
     margin: 0 auto;
     padding: 10px;
+}
+.main-header {
+    width: 100%;
 }
 .main-body {
     border-right: 20px solid whitesmoke;
