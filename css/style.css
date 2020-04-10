@@ -147,11 +147,6 @@ nav a {
     padding: 10px;
 }    
 /*====================== header TABLET =============*/
-/*
-.main-header {
-    width: 100%;
-}
-*/
 .student-name,
 nav a {
     display: inline-block;
@@ -266,11 +261,6 @@ footer {
     margin: 0 auto;
     padding: 10px;
 }
-/*
-.main-header {
-    width: 100%;
-}
-*/
 .main-body {
     border-right: 20px solid whitesmoke;
     border-left: 20px solid whitesmoke;
